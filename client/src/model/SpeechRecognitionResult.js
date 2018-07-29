@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.CloudmersiveImageApiClient) {
-      root.CloudmersiveImageApiClient = {};
+    if (!root.CloudmersiveSpeechApiClient) {
+      root.CloudmersiveSpeechApiClient = {};
     }
-    root.CloudmersiveImageApiClient.SpeechRecognitionResult = factory(root.CloudmersiveImageApiClient.ApiClient);
+    root.CloudmersiveSpeechApiClient.SpeechRecognitionResult = factory(root.CloudmersiveSpeechApiClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -36,7 +36,7 @@
   /**
    * The SpeechRecognitionResult model module.
    * @module model/SpeechRecognitionResult
-   * @version 1.1.1
+   * @version 1.1.2
    */
 
   /**

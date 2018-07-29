@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'), require('../model/SpeechRecognitionResult'));
   } else {
     // Browser globals (root is window)
-    if (!root.CloudmersiveImageApiClient) {
-      root.CloudmersiveImageApiClient = {};
+    if (!root.CloudmersiveSpeechApiClient) {
+      root.CloudmersiveSpeechApiClient = {};
     }
-    root.CloudmersiveImageApiClient.RecognizeApi = factory(root.CloudmersiveImageApiClient.ApiClient, root.CloudmersiveImageApiClient.SpeechRecognitionResult);
+    root.CloudmersiveSpeechApiClient.RecognizeApi = factory(root.CloudmersiveSpeechApiClient.ApiClient, root.CloudmersiveSpeechApiClient.SpeechRecognitionResult);
   }
 }(this, function(ApiClient, SpeechRecognitionResult) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * Recognize service.
    * @module api/RecognizeApi
-   * @version 1.1.1
+   * @version 1.1.2
    */
 
   /**

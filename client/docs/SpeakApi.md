@@ -1,4 +1,4 @@
-# CloudmersiveImageApiClient.SpeakApi
+# CloudmersiveSpeechApiClient.SpeakApi
 
 All URIs are relative to *https://api.cloudmersive.com*
 
@@ -17,8 +17,8 @@ Takes as input a string and a file format (mp3 or wav) and outputs a wave form i
 
 ### Example
 ```javascript
-var CloudmersiveImageApiClient = require('cloudmersive-image-api-client');
-var defaultClient = CloudmersiveImageApiClient.ApiClient.instance;
+var CloudmersiveSpeechApiClient = require('cloudmersive-speech-api-client');
+var defaultClient = CloudmersiveSpeechApiClient.ApiClient.instance;
 
 // Configure API key authorization: Apikey
 var Apikey = defaultClient.authentications['Apikey'];
@@ -26,7 +26,7 @@ Apikey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Apikey.apiKeyPrefix = 'Token';
 
-var apiInstance = new CloudmersiveImageApiClient.SpeakApi();
+var apiInstance = new CloudmersiveSpeechApiClient.SpeakApi();
 
 var format = "format_example"; // String | File format to generate response in; possible values are \"mp3\" or \"wav\"
 

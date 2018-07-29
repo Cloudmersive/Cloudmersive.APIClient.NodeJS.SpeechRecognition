@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CloudmersiveImageApiClient);
+    factory(root.expect, root.CloudmersiveSpeechApiClient);
   }
-}(this, function(expect, CloudmersiveImageApiClient) {
+}(this, function(expect, CloudmersiveSpeechApiClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CloudmersiveImageApiClient.SpeechRecognitionResult();
+    instance = new CloudmersiveSpeechApiClient.SpeechRecognitionResult();
   });
 
   var getProperty = function(object, getter, property) {
@@ -52,13 +52,13 @@
   describe('SpeechRecognitionResult', function() {
     it('should create an instance of SpeechRecognitionResult', function() {
       // uncomment below and update the code to test SpeechRecognitionResult
-      //var instane = new CloudmersiveImageApiClient.SpeechRecognitionResult();
-      //expect(instance).to.be.a(CloudmersiveImageApiClient.SpeechRecognitionResult);
+      //var instane = new CloudmersiveSpeechApiClient.SpeechRecognitionResult();
+      //expect(instance).to.be.a(CloudmersiveSpeechApiClient.SpeechRecognitionResult);
     });
 
     it('should have the property textResult (base name: "TextResult")', function() {
       // uncomment below and update the code to test the property textResult
-      //var instane = new CloudmersiveImageApiClient.SpeechRecognitionResult();
+      //var instane = new CloudmersiveSpeechApiClient.SpeechRecognitionResult();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# CloudmersiveImageApiClient.SpeechRecognitionResult
+# CloudmersiveSpeechApiClient.SpeechRecognitionResult
 
 ## Properties
 Name | Type | Description | Notes

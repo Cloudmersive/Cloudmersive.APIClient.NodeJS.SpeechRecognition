@@ -1,4 +1,4 @@
-# CloudmersiveImageApiClient.RecognizeApi
+# CloudmersiveSpeechApiClient.RecognizeApi
 
 All URIs are relative to *https://api.cloudmersive.com*
 
@@ -17,8 +17,8 @@ Uses advanced machine learning to convert input audio, which can be mp3 or wav, 
 
 ### Example
 ```javascript
-var CloudmersiveImageApiClient = require('cloudmersive-image-api-client');
-var defaultClient = CloudmersiveImageApiClient.ApiClient.instance;
+var CloudmersiveSpeechApiClient = require('cloudmersive-speech-api-client');
+var defaultClient = CloudmersiveSpeechApiClient.ApiClient.instance;
 
 // Configure API key authorization: Apikey
 var Apikey = defaultClient.authentications['Apikey'];
@@ -26,7 +26,7 @@ Apikey.apiKey = 'YOUR API KEY';
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //Apikey.apiKeyPrefix = 'Token';
 
-var apiInstance = new CloudmersiveImageApiClient.RecognizeApi();
+var apiInstance = new CloudmersiveSpeechApiClient.RecognizeApi();
 
 var speechFile = "/path/to/file.txt"; // File | Speech file to perform the operation on.  Common file formats such as WAV, MP3 are supported.
 

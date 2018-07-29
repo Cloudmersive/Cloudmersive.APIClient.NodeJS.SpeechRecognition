@@ -22,10 +22,10 @@
     module.exports = factory(require('../ApiClient'));
   } else {
     // Browser globals (root is window)
-    if (!root.CloudmersiveImageApiClient) {
-      root.CloudmersiveImageApiClient = {};
+    if (!root.CloudmersiveSpeechApiClient) {
+      root.CloudmersiveSpeechApiClient = {};
     }
-    root.CloudmersiveImageApiClient.SpeakApi = factory(root.CloudmersiveImageApiClient.ApiClient);
+    root.CloudmersiveSpeechApiClient.SpeakApi = factory(root.CloudmersiveSpeechApiClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -33,7 +33,7 @@
   /**
    * Speak service.
    * @module api/SpeakApi
-   * @version 1.1.1
+   * @version 1.1.2
    */
 
   /**
@@ -92,7 +92,7 @@
       var authNames = ['Apikey'];
       var contentTypes = ['application/json', 'text/json', 'application/xml', 'text/xml', 'application/x-www-form-urlencoded'];
       var accepts = ['application/json', 'text/json', 'application/xml', 'text/xml'];
-      var returnType = Object;
+      var returnType = 'Blob';
 
       return this.apiClient.callApi(
         '/speech/speak/text/basicVoice/{format}', 'POST',

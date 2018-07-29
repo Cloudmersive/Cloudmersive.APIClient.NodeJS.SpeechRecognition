@@ -22,15 +22,15 @@
     factory(require('expect.js'), require('../../src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.CloudmersiveImageApiClient);
+    factory(root.expect, root.CloudmersiveSpeechApiClient);
   }
-}(this, function(expect, CloudmersiveImageApiClient) {
+}(this, function(expect, CloudmersiveSpeechApiClient) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new CloudmersiveImageApiClient.RecognizeApi();
+    instance = new CloudmersiveSpeechApiClient.RecognizeApi();
   });
 
   var getProperty = function(object, getter, property) {
