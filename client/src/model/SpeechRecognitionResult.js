@@ -36,7 +36,7 @@
   /**
    * The SpeechRecognitionResult model module.
    * @module model/SpeechRecognitionResult
-   * @version 1.1.2
+   * @version 1.1.3
    */
 
   /**
