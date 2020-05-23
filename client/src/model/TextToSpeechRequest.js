@@ -25,7 +25,7 @@
     if (!root.CloudmersiveSpeechApiClient) {
       root.CloudmersiveSpeechApiClient = {};
     }
-    root.CloudmersiveSpeechApiClient.SpeechRecognitionResult = factory(root.CloudmersiveSpeechApiClient.ApiClient);
+    root.CloudmersiveSpeechApiClient.TextToSpeechRequest = factory(root.CloudmersiveSpeechApiClient.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -34,46 +34,55 @@
 
 
   /**
-   * The SpeechRecognitionResult model module.
-   * @module model/SpeechRecognitionResult
+   * The TextToSpeechRequest model module.
+   * @module model/TextToSpeechRequest
    * @version 1.1.5
    */
 
   /**
-   * Constructs a new <code>SpeechRecognitionResult</code>.
-   * Result of recognizing speech
-   * @alias module:model/SpeechRecognitionResult
+   * Constructs a new <code>TextToSpeechRequest</code>.
+   * Input to a Text To Speech request
+   * @alias module:model/TextToSpeechRequest
    * @class
    */
   var exports = function() {
     var _this = this;
 
 
+
   };
 
   /**
-   * Constructs a <code>SpeechRecognitionResult</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>TextToSpeechRequest</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:model/SpeechRecognitionResult} obj Optional instance to populate.
-   * @return {module:model/SpeechRecognitionResult} The populated <code>SpeechRecognitionResult</code> instance.
+   * @param {module:model/TextToSpeechRequest} obj Optional instance to populate.
+   * @return {module:model/TextToSpeechRequest} The populated <code>TextToSpeechRequest</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('TextResult')) {
-        obj['TextResult'] = ApiClient.convertToType(data['TextResult'], 'String');
+      if (data.hasOwnProperty('Format')) {
+        obj['Format'] = ApiClient.convertToType(data['Format'], 'String');
+      }
+      if (data.hasOwnProperty('Text')) {
+        obj['Text'] = ApiClient.convertToType(data['Text'], 'String');
       }
     }
     return obj;
   }
 
   /**
-   * Recognition result in text format
-   * @member {String} TextResult
+   * File format for output audio file: wav or mp3, default is mp3
+   * @member {String} Format
    */
-  exports.prototype['TextResult'] = undefined;
+  exports.prototype['Format'] = undefined;
+  /**
+   * Text to be converted to speech
+   * @member {String} Text
+   */
+  exports.prototype['Text'] = undefined;
 
 
 

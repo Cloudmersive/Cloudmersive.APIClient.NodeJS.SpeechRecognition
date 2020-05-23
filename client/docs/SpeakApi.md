@@ -5,6 +5,7 @@ All URIs are relative to *https://api.cloudmersive.com*
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**speakPost**](SpeakApi.md#speakPost) | **POST** /speech/speak/text/basicVoice/{format} | Perform text-to-speech on a string
+[**speakTextToSpeech**](SpeakApi.md#speakTextToSpeech) | **POST** /speech/speak/text/voice/basic/audio | Perform text-to-speech on a string
 
 
 <a name="speakPost"></a>
@@ -49,6 +50,59 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **format** | **String**| File format to generate response in; possible values are \&quot;mp3\&quot; or \&quot;wav\&quot; | 
  **text** | **String**| The text you would like to conver to speech.  Be sure to surround with quotes, e.g. \&quot;The quick brown fox jumps over the lazy dog.\&quot; | 
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[Apikey](../README.md#Apikey)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
+ - **Accept**: application/octet-stream
+
+<a name="speakTextToSpeech"></a>
+# **speakTextToSpeech**
+> Object speakTextToSpeech(reqConfig)
+
+Perform text-to-speech on a string
+
+Takes as input a string and a file format (mp3 or wav) and outputs a wave form in the appropriate format.
+
+### Example
+```javascript
+var CloudmersiveSpeechApiClient = require('cloudmersive-speech-api-client');
+var defaultClient = CloudmersiveSpeechApiClient.ApiClient.instance;
+
+// Configure API key authorization: Apikey
+var Apikey = defaultClient.authentications['Apikey'];
+Apikey.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Apikey.apiKeyPrefix = 'Token';
+
+var apiInstance = new CloudmersiveSpeechApiClient.SpeakApi();
+
+var reqConfig = new CloudmersiveSpeechApiClient.TextToSpeechRequest(); // TextToSpeechRequest | String input request
+
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+apiInstance.speakTextToSpeech(reqConfig, callback);
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **reqConfig** | [**TextToSpeechRequest**](TextToSpeechRequest.md)| String input request | 
 
 ### Return type
 

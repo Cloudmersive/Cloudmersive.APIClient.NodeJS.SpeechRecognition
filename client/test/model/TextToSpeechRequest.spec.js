@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new CloudmersiveSpeechApiClient.RecognizeApi();
+    instance = new CloudmersiveSpeechApiClient.TextToSpeechRequest();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,17 +49,25 @@
       object[property] = value;
   }
 
-  describe('RecognizeApi', function() {
-    describe('recognizeFile', function() {
-      it('should call recognizeFile successfully', function(done) {
-        //uncomment below and update the code to test recognizeFile
-        //instance.recognizeFile(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
+  describe('TextToSpeechRequest', function() {
+    it('should create an instance of TextToSpeechRequest', function() {
+      // uncomment below and update the code to test TextToSpeechRequest
+      //var instane = new CloudmersiveSpeechApiClient.TextToSpeechRequest();
+      //expect(instance).to.be.a(CloudmersiveSpeechApiClient.TextToSpeechRequest);
     });
+
+    it('should have the property format (base name: "Format")', function() {
+      // uncomment below and update the code to test the property format
+      //var instane = new CloudmersiveSpeechApiClient.TextToSpeechRequest();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property text (base name: "Text")', function() {
+      // uncomment below and update the code to test the property text
+      //var instane = new CloudmersiveSpeechApiClient.TextToSpeechRequest();
+      //expect(instance).to.be();
+    });
+
   });
 
 }));
