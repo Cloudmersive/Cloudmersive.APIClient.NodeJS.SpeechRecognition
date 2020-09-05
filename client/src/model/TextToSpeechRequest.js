@@ -36,7 +36,7 @@
   /**
    * The TextToSpeechRequest model module.
    * @module model/TextToSpeechRequest
-   * @version 1.1.5
+   * @version 1.1.6
    */
 
   /**

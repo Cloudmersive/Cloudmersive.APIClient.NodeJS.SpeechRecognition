@@ -5,7 +5,7 @@ Speech APIs enable you to recognize speech and convert it to text using advanced
 [Cloudmersive Speech API](https://www.cloudmersive.com/voice-recognition-and-speech-api) provides advanced voice recognition and text to speech capabilities
 
 - API version: v1
-- Package version: 1.1.5
+- Package version: 1.1.6
 
 
 ## Installation

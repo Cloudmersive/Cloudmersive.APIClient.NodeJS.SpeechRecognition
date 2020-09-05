@@ -1,5 +1,6 @@
 ﻿{
 
   "projectName" : "cloudmersive-speech-api-client",
-  "projectVersion": "1.1.5"
+  "projectVersion": "1.1.6",
+  "licenseName": "Apache-2.0"
 }  
